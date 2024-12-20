@@ -1,0 +1,54 @@
+/* Conteneur des catégories */
+.categories-list {
+  display: grid; /* Utilisation du layout grid */
+  grid-template-columns: repeat(3, 1fr); /* 3 cartes par ligne */
+  gap: 20px; /* Espacement entre les cartes */
+  justify-content: center; /* Centre le contenu si moins de 3 cartes */
+  padding: 20px; /* Ajoute un peu d'espace autour */
+}
+
+/* Conteneur principal */
+.categories-container {
+  background-image: url('../../public/back.jpg'); /* Chemin relatif à public */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
+}
+
+/* Carte individuelle */
+.category-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Animation au survol */
+.category-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Chargement */
+.loading {
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Erreur */
+.error {
+  font-size: 1.5rem;
+  color: #ff4d4d;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}

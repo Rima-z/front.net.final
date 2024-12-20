@@ -1,0 +1,82 @@
+/* Articles.css */
+.articles-container {
+  background-image: url('../../public/arti.jpg'); /* Chemin relatif à public */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+ 
+  }
+  
+  .articles-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .article-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .article-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .loading {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .error {
+    font-size: 1.5rem;
+    color: #ff4d4d;
+  }
+
+  /* Style pour le bouton "Ajouter au panier" */
+.add-to-cart {
+  padding: 12px 20px; /* Espacement intérieur du bouton */
+  background-color: #28a745; /* Couleur de fond verte */
+  color: white; /* Couleur du texte */
+  font-size: 16px; /* Taille du texte */
+  font-weight: bold; /* Poids du texte */
+  border: none; /* Pas de bordure */
+  border-radius: 4px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de la souris devient un pointeur */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition fluide pour l'arrière-plan et l'agrandissement */
+  display: inline-block; /* Permet d'ajuster la taille du bouton */
+}
+
+.add-to-cart:hover {
+  background-color: #218838; /* Couleur de fond plus sombre au survol */
+  transform: scale(1.05); /* Agrandissement du bouton au survol */
+}
+
+.add-to-cart:focus {
+  outline: none; /* Supprimer le contour bleu du focus */
+}
+
+.add-to-cart:active {
+  background-color: #1e7e34; /* Couleur de fond encore plus sombre quand le bouton est cliqué */
+  transform: scale(1); /* Rétablir la taille normale lors du clic */
+}
+
+.add-to-cart:disabled {
+  background-color: #d6d6d6; /* Couleur de fond gris si le bouton est désactivé */
+  color: #a9a9a9; /* Couleur du texte gris */
+  cursor: not-allowed; /* Curseur "non autorisé" */
+  transform: none; /* Pas de transformation */
+}
+
+  
